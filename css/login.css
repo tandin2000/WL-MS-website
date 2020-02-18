@@ -1,0 +1,350 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper_mobile{
+
+    margin: 0px 0px 0px;
+    background:white;
+    position: relative;
+}
+
+.wrapper_tab{
+    display: none;
+}
+
+.tab_div{
+    display: none;
+}
+
+.water_drop{
+    position: absolute;
+    width: 100%;
+}
+
+.tab_view_banner{
+    display: none;
+    width: 100%;
+}
+
+.top_banner{
+    display: none;
+    width: 100%;
+}
+
+.intro_article{
+    padding: 60px 60px 30px;
+
+    font-family: 'Livvic', sans-serif;
+}
+
+.mobile_view_icon{
+    width: 100%;
+}
+
+.log_handeler{
+    margin-top: 10px;
+    position: absolute;
+    align-content: center;
+    text-align:center;
+    margin-bottom: -30px;
+}
+
+.login_div{
+    padding: 10px 30px 0px;
+}
+
+.h1_style{
+    font-family: 'Livvic', sans-serif;
+    text-align: center;
+}
+.login_form{
+    font-family: 'Livvic', sans-serif;
+}
+
+.login_form input{
+    width: 60%;
+    height: 40px;
+    align-content: center;
+    text-align: center;
+    padding: 0 5%;
+    margin-bottom: 8px;
+    border: none;
+    background-color: rgba(15, 15, 15, 0.904);
+    font-family: 'Comfortaa', cursive;
+    font-size: 16px;
+    color: #1d1d1d;
+    line-height: 40px;
+    border-radius: 5px;
+    float: center;
+}
+
+.login_form p{
+    float: center;
+}
+
+.login_btn{
+
+    width: 80px;
+    height: 35px;
+    border: none;
+    font-family: 'Comfortaa', cursive;
+    font-size: 12px;
+    color: white;
+    background: rgba(0, 7, 7, 0.918);
+    float: center;
+    border-radius: 5px;
+}
+
+.login_btn :hover{
+    background: rgba(49, 40, 0, 0.918);
+    cursor: pointer;
+}
+
+.signup_btn{
+
+    width: 50px;
+    height: 20px;
+    border: none;
+    font-family: 'Comfortaa', cursive;
+    font-size: 8px;
+    color: white;
+    float: center;
+    background: rgba(0, 7, 7, 0.918);
+    border-radius: 2px;
+}
+
+.signup_btn :hover{
+    background: rgba(49, 40, 0, 0.918);
+    cursor: pointer;
+}
+
+.footer_img{
+    margin-bottom: 0px;
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px){
+    .wrapper_mobile{
+        display: none;
+    }
+
+    .tab_div{display: block;}
+
+    .mobile_view_icon{
+        display: none;
+        width: 100%;
+    }
+    
+    .tab_view_banner{
+        width: 100%;
+        display: block;
+    }
+    
+    .top_banner{
+        display: none;
+        width: 100%;
+    }
+
+    .wrapper_tab{
+        display: block;
+    }
+
+    .tab_view_body{
+        position: absolute;
+        width: 100%;
+    }
+
+    .footer_tab{
+        width: 100%;
+        display: block;
+    }
+
+    .body_tab{
+        display: grid;
+        padding: 10px;
+        width: 100%;
+        position: absolute;
+        grid-template-columns: 53% 50%;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+                "lbt rbt";
+    }
+
+    .left_body_tab{
+        grid-area: lbt;
+        align-content: center;
+        padding: 40px;
+
+    }
+
+    .right_body_tab{
+        grid-area: rbt;
+        padding-left: 0px;
+    }
+
+    .h1_style_two{
+        font-family: 'Livvic', sans-serif;
+        text-align: center;
+        color: rgb(24, 24, 24);
+    }
+
+    /*form styles*/
+    .tab_login_form{
+        float: center;
+        font-family: 'Livvic', sans-serif;
+        align-items: center;
+    }
+   
+    .tab_login_form input{
+        width: 100%;
+        height: 50px;
+        align-content: center;
+        text-align: center;
+        padding: 0 5%;
+        margin-bottom: 18px;
+        border: none;
+        background-color: rgba(15, 15, 15, 0.904);
+        font-family: 'Comfortaa', cursive;
+        font-size: 16px;
+        color: #1d1d1d;
+        line-height: 40px;
+        border-radius: 5px;
+        float: center;
+    }
+
+    .login_btn_tab{
+        width: 120px;
+        height: 55px;
+        border: none;
+        font-family: 'Comfortaa', cursive;
+        font-size: 15px;
+        color: white;
+        background: rgba(0, 7, 7, 0.918);
+        float: center;
+        border-radius: 5px;
+        float: right;
+    }
+
+    .login_btn_tab :hover{
+        cursor: pointer;
+        background: #e6e6e6;
+        color: #1d1d1d;
+    }
+    .signup_btn_tab{
+        width: 50px;
+        margin-left: 120px;
+        height: 20px;
+        border: none;
+        font-family: 'Comfortaa', cursive;
+        font-size: 8px;
+        color: white;
+        float: right;
+        background: rgba(0, 7, 7, 0.918);
+        border-radius: 2px;
+        float: right;
+    }
+
+    .signup_btn_tab :hover{
+        cursor: pointer;
+        background: #e6e6e6;
+        color: #1d1d1d;
+    }
+
+}
+
+
+@media only screen and (min-width: 1000px){
+
+    .wrapper_mobile{
+        display: none;
+    }
+
+    .tab_div{
+        display: none;
+    }
+
+    .mobile_view_icon{
+        display: none;
+        width: 100%;
+    }
+    
+    .tab_view_banner{
+        width: 100%;
+        display: none;
+    }
+    
+    .top_banner{
+        display: block;
+        width: 100%;
+    }
+
+    .wrapper_web{
+        display: block;
+    }
+
+    .web_body{
+        display: grid;
+        width: 100%;
+        position: absolute;
+        grid-template-columns: 60% 40%;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+                "wbl wbr";
+    }
+
+    .web_body_left{
+        position: absolute;
+        grid-area: wbl;
+    }
+
+    .web_body_right{
+        position: absolute;
+        grid-area: wbr;
+        padding: 40px;
+    }
+
+    .web_view_body{
+        position: absolute;
+        width: 100%;
+    }
+
+    .h1_style_three{
+        font-family: 'Livvic', sans-serif;
+        text-align: center;
+        color: rgba(0, 7, 7, 0.918);
+    }
+
+    .tab_login_form_web{
+        font-family: 'Livvic', sans-serif;
+        width: 600px;
+        margin-left: 40px;
+    }
+
+    .left_body_tab{
+        display: block;
+    }
+
+    .tab_login_form_web input{
+        width: 100%;
+        height: 50px;
+        padding: 0 5%;
+        margin-bottom: 18px;
+        border: none;
+        background-color: rgba(15, 15, 15, 0.904);
+        font-family: 'Comfortaa', cursive;
+        font-size: 22px;
+        color: #e6e6e6;
+        line-height:50px;
+        border-radius: 5px;
+
+    }
+
+    .intro_article_web{
+        font-family: 'Livvic', sans-serif;
+        margin-right: 120px;
+    }
+
+    
+}

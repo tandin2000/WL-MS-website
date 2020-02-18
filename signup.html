@@ -1,0 +1,67 @@
+<html>
+    <head>
+
+        <title>Please login</title>
+        <link rel="stylesheet" type="text/css" href="login.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Livvic&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/signup.css">
+
+        <link rel="stylesheet" type="text/css" href="css/Login_style.css">
+        <link rel="stylesheet" type="text/css" href="css/Sign up.css">
+
+    </head>
+
+    <body>
+        <img class="top_banner" src="src/top_banner.png" alt="web_view_icon">
+
+        
+
+            <div class="wrapper_web">
+                    <img class="web_sup_banner" src="src/web_view_body.png" alt="web_view_icon">
+                    <div class="space">
+
+                            <div class="Content">
+                                <h1>SignUp</h1><br>
+                                <form class="Reg_form" action="signup.inc.php" method="POST" >
+                    
+                                   <h3>First name   <input type="text" name="fname" placeholder=""></h3>
+                                   <h3>Last name    <input type="text" name="lname" placeholder=""></h3>
+                    
+                                    <h3 class="g">Gender  <select name="gender" class="gender" style="margin-left: 94px"  >
+                                            <option  value="">: Please select</option>
+                                            <option  value="male">: Male</option>
+                                            <option  value="female">: Female</option>
+                                        </select></h3>
+                    
+                                    <div class="address">
+                                        <h3>Address<input type="text" name="address1" placeholder=""></h3>
+                                        <h3><input type="text" name="address2" placeholder=""></h3>
+                                        <h3><input type="text" name="address3" placeholder=""></h3>
+                                    </div>
+                    
+                                    <h3>E-mail   <input type="email" name="email" placeholder=""></h3>
+                    
+                                    <h3>Phone number     <input type="text" name="number" placeholder="" ></h3>
+                                    <h3>User name    <input type="text" name="uId" placeholder=""  ></h3>
+                                    <h3>User name    <input type="text" name="uId" placeholder=""></h3>
+                    
+                                    <h3>Password     <input type="password" name="Pwd" placeholder="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required></h3>
+                    
+                                    <br/><h3 style="background: none">
+                    
+                                        <button type="submit" name="submit">Sign up</button></h3>
+                    
+                                </form>
+                    
+                            </div>
+                    
+            </div>
+                    
+            </div>
+
+        </div>
+
+    </body>
+
+</html>

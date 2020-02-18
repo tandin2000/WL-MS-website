@@ -1,0 +1,180 @@
+<html>
+    <head>
+
+        <title>Please login</title>
+        <link rel="stylesheet" type="text/css" href="css/login.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Livvic&display=swap" rel="stylesheet">
+    
+        <script>
+
+                function loginValidate(){
+                var user_name = document.getElementById("user_name");
+                var password = document.getElementById("password");
+                var username_pattern = /^[A-Za-z]+$/;
+                var password_pattern=  /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/;
+                    
+                if(user_name.value.trim() ==""||password.value.trim() ==""){
+                    alert("You should fill both fields...");
+                    return false;
+                }else{
+
+                    //User name validations
+
+                    if(user_name.value.length<8 || password.value.length<8){
+                        alert("User name is or password is not valide...");
+                        return false;
+                    }else{
+
+                        if(user_name.value.match(username_pattern) || password.value.match(password_pattern)){
+                            return  true;
+                        }else{
+                            alert("User name or password is not valide not valide...");
+                            return false;
+                        }
+
+                       
+                    }
+
+                }
+            }
+                </script>
+    
+    </head>
+
+    <body>
+        <img class="mobile_view_icon" src="src/mobile_view_icon.png" alt="mobile_view_icon">
+        <img class="top_banner" src="src/top_banner.png" alt="web_view_icon">
+        <img class="tab_view_banner" src="src/tab_view_header.png" alt="tab_view_icon">
+      
+        <script>
+
+     /* 
+      ************************************************************       
+      for mobie view
+      ************************************************************
+
+        <div class="wrapper_mobile">
+            <img class="water_drop" src="src/wrapper_bg.png" alt="water_drop_img">
+            <div class="log_handeler">
+                <div class="login_div">
+                    <h1 class="h1_style">Please Login</h1><br>
+                    <form class="login_form" action="signup.inc.php" method="POST" >
+                            <input type="text" name="user_name" placeholder="enter your user name"><br>
+                            <input type="password" name="password" placeholder="enter your password"><br><br>
+                            <button class="login_btn" type="submit" name="login">LOGIN</button><br><br><br>
+                            <p>Forgot password ? 
+                            <button class="signup_btn" type="submit" name="submit">SIGNUP</button></p>
+                    </form>
+                </div>
+                <article class = "intro_article">
+                    <p>
+                        Sri Lanka Safari
+                        Wildlife Safaris in Sri Lanka and
+                        Wildlife Safari tours and camping
+                        
+                        We are a local company specialized
+                         in Wildlife tours, we do tailor make 
+                        Leopard and elephant safaris, Bird
+                         watching tours and any other 
+                        wildlife tours.
+                    </p>
+                </article>
+            </div>
+        
+            ************************************************************       
+            for tablet view
+            ************************************************************
+            </div>
+            <div class="tab_div">
+                <div class="wrapper_tab">
+                 <img class="tab_view_body" src="src/tab_view_body.png" alt="tab_view_body_img">
+                    <div class="body_tab">
+                        <div class="left_body_tab">
+                                <br><br><br><h1 class="h1_style_two" style="margin-top: 220px">Please Login</h1><br><br>
+                                <form class="tab_login_form" action="signup.inc.php" method="POST">
+                                    <input type="text" name="user_name" placeholder="enter your user name" >
+                                    <input type="password" name="password" placeholder="enter your password" >
+                                    <button class="login_btn_tab" type="submit" name="login">LOGIN</button><br><br><br><br><br><br><br><br><br>
+                                    <p>Forgot password ? 
+                                    <button class="signup_btn_tab" type="submit" name="submit">SIGNUP</button></p>
+                            
+                                </form>
+                                
+                        </div>
+                     
+                        <div class="right_body_tab">
+                                <br><br><br><br><article class = "intro_article"  style="margin-top: 280px; font-size: 18px">
+                                        <p>
+                                            Sri Lanka Safari
+                                            Wildlife Safaris in Sri Lanka and
+                                            Wildlife Safari tours and camping
+                                            
+                                            We are a local company specialized
+                                             in Wildlife tours, we do tailor make 
+                                            Leopard and elephant safaris, Bird
+                                             watching tours and any other 
+                                            wildlife tours.
+                                        </p>
+                                    </article>
+                                    
+                        </div>
+                    </div>
+                    <img class="tab_view_banner" src="src/tab_view_header.png" alt="tab_view_icon">
+
+                </div>
+
+
+            </div>
+            ************************************************************       
+            for web view
+            ************************************************************
+            */ 
+
+            </script>
+
+            <div class="wrapper_web">
+                    <div class="web_body">
+                        <img class="web_view_body" src="src/ss.png" alt="web_view_body_img">
+                        <div class="web_body_left">
+                                <div class="left_body_tab">
+                                        <br><br> <br><br> <br><br> <h1 class="h1_style_two" style="margin-top: 10px">Please Login</h1><br><br>
+                                       
+                                        <form class="tab_login_form_web" onsubmit="return loginValidate()" action="gevf.kk" >
+                                            <input type="text" id="user_name" placeholder="enter your user name" >
+                                           <br> <input type="password" id="password" placeholder="enter your password" >
+                                           <br> <button class="login_btn_tab" type="submit" id="login" >LOGIN</button><br><br><br><br><br><br>
+                                        </form>
+
+                                        <p>Forgot password ? 
+                                                <a href="signup.html"><button class="signup_btn_tab" type="submit" name="submit" >SIGNUP</button></a></p>
+                                </div>
+                             </div>
+                        <div class="web_body_right">
+
+                                <br><br><br><br><article class = "intro_article_web"  style="margin-top: 200px; font-size: 18px">
+                                        <p>
+                                            Sri Lanka Safari
+                                            Wildlife Safaris in Sri Lanka and
+                                            Wildlife Safari tours and camping
+                                        
+                    
+                                            We are a local company specialized
+                                             in Wildlife tours, we do tailor make 
+                                            Leopard and elephant safaris, Bird
+                                             watching tours and any other 
+                                            wildlife tours.
+                                        </p>
+                                    </article>
+
+                        </div>
+                    </div>
+            </div>
+
+        </div>
+
+    </body>
+
+
+
+</html>
